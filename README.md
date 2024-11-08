@@ -13,3 +13,8 @@ In a minimal Maven / Java 8 project that has only a single `<dependency>` which 
 ```
 
 will result in breaking the Maven build because of the transitive dependency `org.codehaus.groovy:groovy-all:jar:3.0.13` which results from the dependency `org.jfrog.buildinfo:build-info-extractor-maven3`.
+
+Resulting build error is:
+```
+Error:  Failed to execute goal on project jenkins-artifactory-plugin-groovy-all-dependency-fault-demo: Could not resolve dependencies for project com.lukaspradel:jenkins-artifactory-plugin-groovy-all-dependency-fault-demo:jar:1.0-SNAPSHOT: Could not find artifact org.codehaus.groovy:groovy-all:jar:3.0.13 in repo.jenkins-ci.org (https://repo.jenkins-ci.org/public/)
+```

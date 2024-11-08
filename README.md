@@ -3,7 +3,7 @@ Demo for Maven build breaking through transitive groovy-all dependency in Jenkin
 
 [![Maven build status](https://github.com/lpradel/jenkins-artifactory-plugin-groovy-all-dependency-fault-demo/actions/workflows/maven.yml/badge.svg)](https://github.com/lpradel/jenkins-artifactory-plugin-groovy-all-dependency-fault-demo/actions/workflows/maven.yml)
 
-In a minimal Maven / Java 8 project that has only a single `<dependency>` which is the Jenkins Artifactory Plugin like so
+In a minimal Maven / Java 8 project that has only a single `<dependency>` which is the Jenkins Artifactory Plugin like [in this demo](https://github.com/lpradel/jenkins-artifactory-plugin-groovy-all-dependency-fault-demo/blob/main/pom.xml#L25)
 ```
 <dependency>
     <groupId>org.jenkins-ci.plugins</groupId>
